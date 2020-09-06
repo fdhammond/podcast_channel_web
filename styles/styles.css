@@ -1,0 +1,399 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@600&display=swap");
+/* Var */
+/* Mix Styles */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+
+/* Navigation Bar */
+nav {
+  background-color: #fff;
+  opacity: 95%;
+  height: 8rem;
+  width: 100%;
+}
+
+nav label.logo img {
+  margin: 2.2rem 0 0 10rem;
+}
+
+nav ul {
+  top: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  float: right;
+  margin: 2.6rem 10rem 0 0;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 2.8rem;
+  margin: 0 2.8rem;
+}
+
+nav ul li a {
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #060A24;
+  font-family: "IBM Plex Mono";
+}
+
+nav ul li a:hover {
+  font-weight: 50rem;
+  font-size: 1.6rem;
+  color: #00F3BB;
+  letter-spacing: 0;
+  line-height: 2.8rem;
+  text-decoration: line-through;
+  font-family: "IBM Plex Mono";
+}
+
+nav .checkbtn {
+  font-size: 3rem;
+  color: #060A24;
+  float: right;
+  margin-top: 1.6rem;
+  margin-right: 1.6rem;
+  cursor: pointer;
+  display: none;
+}
+
+nav #check {
+  display: none;
+}
+
+@media (max-width: 952px) {
+  nav label.logo img {
+    margin-left: 1.6rem;
+  }
+  nav ul li a {
+    color: #fff;
+    font-size: 1.6rem;
+    letter-spacing: 0;
+    line-height: 1.6rem;
+  }
+}
+
+@media (max-width: 950px) {
+  nav .checkbtn {
+    display: block;
+  }
+  nav ul {
+    position: fixed;
+    width: 100%;
+    height: 22.4rem;
+    background-color: #0000EC;
+    top: -100%;
+    left: 0;
+    text-align: left;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 2.4rem 0 0 1.6rem;
+  }
+  #check:checked ~ ul {
+    top: 0;
+    margin-top: 6.4rem;
+  }
+}
+
+/* Main Text */
+.main-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 12rem 0 0.5rem 20rem;
+}
+
+.main-text .title h1 {
+  font-family: "IBM Plex Sans";
+  font-size: 6.4rem;
+  color: #060A24;
+  letter-spacing: 0;
+}
+
+.main-text .title h1 #world {
+  font-size: 6.4rem;
+  text-decoration: line-through;
+}
+
+.main-text .title h1 #dot {
+  color: #0000EC;
+  font-size: 6.4rem;
+}
+
+.main-text .paragraph p {
+  font-family: "IBM Plex Mono";
+  font-size: 1.6rem;
+  color: #060A24;
+  letter-spacing: 0;
+  line-height: 2.4rem;
+  text-align: left;
+}
+
+.main-text .paragraph .paragraph-mobile {
+  display: none;
+}
+
+.main-text .button-title {
+  margin-top: 5.6rem;
+}
+
+.main-text .button-title button {
+  display: inline-block;
+  background-color: #00F3BB;
+  font-family: "IBM Plex Mono";
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.8rem;
+  border: none;
+  color: #060A24;
+  width: 22.6rem;
+  height: 5.6rem;
+}
+
+.main-text .button-title button:hover {
+  background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+  color: #fff;
+}
+
+.main-text .button-title button a {
+  display: inline-block;
+  width: 22.6rem;
+  height: auto;
+  font-family: "IBM Plex Mono";
+  font-size: 1.8rem;
+  color: #060A24;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 2.4rem;
+  text-decoration: none;
+}
+
+main {
+  /* Episodes */
+  /* About */
+}
+
+main .episodes .episodes-title {
+  font-family: "IBM Plex Sans";
+  font-weight: normal;
+  font-size: 4.8rem;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  margin: 18.6rem 0 2.6rem 20rem;
+}
+
+main .episodes .background-clip {
+  width: 100%;
+  height: 100rem;
+  position: absolute;
+  top: 50rem;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+  -webkit-clip-path: polygon(0 8%, 100% 0%, 100% 90%, 0% 100%);
+          clip-path: polygon(0 8%, 100% 0%, 100% 90%, 0% 100%);
+  z-index: -1;
+}
+
+main .episodes .episodes-spotify {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(58.4rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(58.4rem, 1fr));
+  gap: 7.2rem;
+  margin: 0 10rem 0 10rem;
+}
+
+main .about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .about .about-iphone {
+  margin: 6.4rem 6.2rem 6.4rem 20rem;
+}
+
+main .about .about-iphone img {
+  max-width: 45.7rem;
+  max-height: 66rem;
+}
+
+main .about .about-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 0 2.4rem 0;
+}
+
+main .about .about-text h2 {
+  font-family: "IBM Plex Sans";
+  font-size: 4.8rem;
+  color: #060A24;
+  letter-spacing: 0;
+}
+
+main .about .about-text p {
+  margin: 2.4rem 25.6rem 0 0;
+  font-family: "IBM Plex Mono";
+  font-size: 1.6rem;
+  color: #060A24;
+  line-height: 2.4rem;
+  letter-spacing: 0;
+}
+
+/* Mobile View */
+@media (max-width: 965px) {
+  .main-text {
+    margin: 0 1.6rem 0 1.6rem;
+  }
+  .main-text .title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 80%;
+  }
+  .main-text .title h1 {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    font-size: 3.6rem;
+    letter-spacing: 0;
+    line-height: 4.2rem;
+  }
+  .main-text .title h1 #world {
+    font-size: 3.6rem;
+  }
+  .main-text .paragraph {
+    width: 90%;
+    margin-top: 1.6rem;
+  }
+  .main-text .paragraph p {
+    font-size: 1.4rem;
+    letter-spacing: 0;
+    line-height: 2.2rem;
+  }
+  .main-text .paragraph p.paragraph-desktop {
+    display: none;
+  }
+  .main-text .paragraph p.paragraph-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .main-text .button-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0;
+  }
+  .main-text .button-title button {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 3.6rem 1.6rem 0 -1.6rem;
+    width: 90%;
+    height: 4.8rem;
+  }
+  main .episodes {
+    margin: 0;
+  }
+  main .episodes .episodes-title {
+    margin: 8.8rem 0 1.1rem 1.6rem;
+    font-family: "IBM Plex Sans";
+    font-size: 3.6rem;
+    color: #fff;
+    letter-spacing: 0;
+    line-height: 4.2rem;
+  }
+  main .episodes .background-clip {
+    margin-top: -12rem;
+    height: 125rem;
+    -webkit-clip-path: polygon(0 2%, 100% 0%, 100% 92%, 0% 96%);
+            clip-path: polygon(0 2%, 100% 0%, 100% 92%, 0% 96%);
+  }
+  main .episodes .episodes-spotify {
+    margin: 0 1.1rem 1.1rem 1.1rem;
+    gap: 1.1rem;
+    -ms-grid-columns: (minmax(50%, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+  }
+  main .about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .about .about-iphone {
+    margin: 4.8rem 0 0 0;
+  }
+  main .about .about-text {
+    margin: 2.7rem 0 0 0;
+  }
+  main .about .about-text h2 {
+    margin: 0 1.6rem;
+    font-family: "IBM Plex Sans";
+    font-size: 3.6rem;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 4.2rem;
+  }
+  main .about .about-text p {
+    margin: .8rem 1.6rem 0 1.6rem;
+    font-family: "IBM Plex Mono";
+    font-size: 1.4rem;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 2.2rem;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
