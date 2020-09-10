@@ -114,7 +114,6 @@ $main-color-deg: radial-gradient(circle, rgba(0,0,254,1) 0%, rgba(0,240,184,1) 1
 @media (max-width: 952px) {
 
     nav {
-      top: 0;
       label {
         &.logo {
           img {
@@ -160,9 +159,19 @@ $main-color-deg: radial-gradient(circle, rgba(0,0,254,1) 0%, rgba(0,240,184,1) 1
   }
   
   #check {
-    &:checked ~ ul {
+    
+    &:checked ~ ul {      
       top: 0;
       margin-top: 6.4rem;
+    }
+    
+    &:checked ~ .checkbtn .fa-bars::before {
+      content: "\f00d";
+      position: absolute;
+      top: 2.6rem;
+      right: 2.6rem;
+      margin-right: 1.2rem;
+      transition-duration: .8s;
     }
   }
 }
@@ -174,14 +183,16 @@ $main-color-deg: radial-gradient(circle, rgba(0,0,254,1) 0%, rgba(0,240,184,1) 1
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: flex-start;
-  margin: 12rem 0 0.5rem 20rem;
+  margin: 12rem 0 0 20rem; 
   
   .title {
+
     h1 {
       font-family: $main-mono-sans;
       font-size: 6.4rem;
       color: $main-color-black;
       letter-spacing: 0;
+      
       #world {
         font-size: 6.4rem;
         text-decoration: line-through;
@@ -252,12 +263,12 @@ main {
     width: 100%;
     height: 100rem;
     position: absolute;
-    top: 40rem;
+    top: 45rem;
     bottom: 0;
     right: 0;
     left: 0;
     background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
-    clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+    clip-path: polygon(0 5%, 100% 0%, 100% 85%, 0% 100%);
     z-index: -1;
   }
   .episodes-spotify {
@@ -539,7 +550,7 @@ footer {
       .background-clip {
         margin-top: -12rem;
         height: 125rem;
-        clip-path: polygon(0 2%, 100% 0%, 100% 92%, 0% 96%);
+        clip-path: polygon(0 2%, 100% 0%, 100% 95%, 0% 100%);
       }
 
       .episodes-spotify {

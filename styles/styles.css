@@ -72,9 +72,6 @@ nav #check {
 }
 
 @media (max-width: 952px) {
-  nav {
-    top: 0;
-  }
   nav label.logo img {
     margin-left: 1.6rem;
   }
@@ -109,6 +106,15 @@ nav #check {
     top: 0;
     margin-top: 6.4rem;
   }
+  #check:checked ~ .checkbtn .fa-bars::before {
+    content: "\f00d";
+    position: absolute;
+    top: 2.6rem;
+    right: 2.6rem;
+    margin-right: 1.2rem;
+    -webkit-transition-duration: .8s;
+            transition-duration: .8s;
+  }
 }
 
 /* Main Text */
@@ -125,7 +131,7 @@ nav #check {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  margin: 12rem 0 0.5rem 20rem;
+  margin: 12rem 0 0 20rem;
 }
 
 .main-text .title h1 {
@@ -214,13 +220,13 @@ main .episodes .background-clip {
   width: 100%;
   height: 100rem;
   position: absolute;
-  top: 40rem;
+  top: 45rem;
   bottom: 0;
   right: 0;
   left: 0;
   background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
-  -webkit-clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
-          clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+  -webkit-clip-path: polygon(0 5%, 100% 0%, 100% 85%, 0% 100%);
+          clip-path: polygon(0 5%, 100% 0%, 100% 85%, 0% 100%);
   z-index: -1;
 }
 
@@ -555,8 +561,8 @@ footer .footer .footer-icons i:last-child {
   main .episodes .background-clip {
     margin-top: -12rem;
     height: 125rem;
-    -webkit-clip-path: polygon(0 2%, 100% 0%, 100% 92%, 0% 96%);
-            clip-path: polygon(0 2%, 100% 0%, 100% 92%, 0% 96%);
+    -webkit-clip-path: polygon(0 2%, 100% 0%, 100% 95%, 0% 100%);
+            clip-path: polygon(0 2%, 100% 0%, 100% 95%, 0% 100%);
   }
   main .episodes .episodes-spotify {
     margin: 0 1.1rem 1.1rem 1.1rem;
