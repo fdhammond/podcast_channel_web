@@ -5,7 +5,7 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@600&display=swap");
 
-/* Var */
+/* Variables */
 
 $main-mono-sans:'IBM Plex Sans';
 $main-mono-plex: 'IBM Plex Mono';
@@ -61,7 +61,9 @@ $main-color-deg: radial-gradient(circle, rgba(0,0,254,1) 0%, rgba(0,240,184,1) 1
     opacity: 95%;
     height: 8rem;
     width: 100%;
-
+    top: 0;
+    position: fixed;
+    
     label {      
         &.logo {
           img {
@@ -72,7 +74,6 @@ $main-color-deg: radial-gradient(circle, rgba(0,0,254,1) 0%, rgba(0,240,184,1) 1
 
     ul {
         top: 0;
-        position: sticky;
         float: right;
         margin: 2.6rem 10rem 0 0;
 
@@ -113,7 +114,7 @@ $main-color-deg: radial-gradient(circle, rgba(0,0,254,1) 0%, rgba(0,240,184,1) 1
 @media (max-width: 952px) {
 
     nav {
-     
+      top: 0;
       label {
         &.logo {
           img {
@@ -151,7 +152,6 @@ $main-color-deg: radial-gradient(circle, rgba(0,0,254,1) 0%, rgba(0,240,184,1) 1
       left: 0;
       text-align: left;
       transition: all .5s;
-      
       li{
       display: block; 
       margin: 2.4rem 0 0 1.6rem;
@@ -252,12 +252,12 @@ main {
     width: 100%;
     height: 100rem;
     position: absolute;
-    top: 50rem;
+    top: 40rem;
     bottom: 0;
     right: 0;
     left: 0;
     background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
-    clip-path: polygon(0 8%, 100% 0%, 100% 90%, 0% 100%);
+    clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
     z-index: -1;
   }
   .episodes-spotify {
@@ -278,8 +278,8 @@ main {
   .about-iphone {
     margin: 6.4rem 6.2rem 6.4rem 20rem;    
       img {
-        max-width: 45.7rem;
-        max-height: 66rem;
+        width: 45.7rem;
+        height: 66rem;
       }
   }
   .about-text {
@@ -425,11 +425,54 @@ main {
   }
 }
 
+/* Footer */
+
+footer {
+  .footer { 
+  
+  display: flex;
+  justify-content: space-between;
+  height: 9.5rem;
+
+  .footer-paragraph {
+    margin-top: 3.6rem;
+    margin-bottom: 3.1rem;
+    margin-left: 10rem;
+
+    p {
+      font-family: $main-mono-plex;
+      font-size: 1.6rem;
+      color: $main-color-black;
+      letter-spacing: 0;
+      line-height: 2.8rem;
+      }
+  }
+  
+  .footer-icons {
+    margin-top: 3.6rem;
+    margin-bottom: 3.1rem;
+    margin-right: 10rem;
+
+    i {
+      padding-right: 3.6rem;
+      font-size: 1.8rem;
+      color: var(--main-color-black);
+      letter-spacing: 0;
+      line-height: 28px;
+
+      &:last-child {
+        padding-right: 0;
+       }
+      }
+    }
+  }
+}
+
 
 
 /* Mobile View */
 
-@media (max-width: 965px) {
+@media (max-width: 550px) {
  
   .main-text {
     margin: 0 1.6rem 0 1.6rem;
@@ -512,9 +555,15 @@ main {
       display: flex;
       flex-wrap: wrap;
       flex-direction: column;
+      align-content: center;
 
       .about-iphone {
-        margin: 4.8rem 0 0 0;
+        margin: 4.8rem auto auto auto;
+        img {
+          width: 36rem;
+          height: auto;
+          padding: 0 1rem;
+        }
       }
 
       .about-text {
@@ -551,10 +600,15 @@ main {
         line-height: 4.2rem;
         }
       }
+      .interviews-images {   
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(32rem, 1fr));                         
+      }
     }
 
     /* Topics */
     .topics {
+
       .topics-title {
         h2 {
           margin: 4.8rem 1.6rem 2.4rem 1.6rem;
@@ -563,6 +617,40 @@ main {
           color: $main-color-black;
           letter-spacing: 0;
           line-height: 4.2rem;
+        }
+      }
+
+      .topics-icons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        gap: 0;
+        align-items: center;
+        margin: 0;
+      
+        img {
+          margin-top: 6.5rem;
+        }
+
+        #first-icon {
+          margin-top: -1.1rem;
+        }
+
+        #second-icon {
+          gap: -10rem;
+          margin-top: -1.6rem;
+        }
+
+        h3 {
+          font-family: $main-mono-sans;
+          font-size: 2.4rem;
+          font-weight: 600;
+          color: $main-color-black;
+          letter-spacing: 0;
+          text-align: center;
+          width: 28.8rem;
+          height: 6.4rem;
         }
       }
     }
@@ -575,6 +663,7 @@ main {
         background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
         clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0% 100%);
         .news-title {
+          margin-bottom: 3.6rem;
           h2 {
             margin: 6.4rem 1.6rem 0 1.6rem;
             font-family: $main-mono-sans;
@@ -586,7 +675,7 @@ main {
           }
         } 
         .button-news {
-          margin-top: 18.6rem;
+          margin-top: 22.2rem;
           & button {
             width: 100%;
             height: 4.8rem;
@@ -595,5 +684,34 @@ main {
         }       
       }      
     }
+  }
+
+  /* Footer */
+  footer { 
+    .footer {
+      display: flex;
+      flex-direction: column;     
+      .footer-paragraph {
+        margin: 0;  
+        p {
+          display: flex;
+          justify-content: center;
+          align-content: center;          
+          margin: 2.4rem 0 1.6rem 0;
+        }        
+      }
+    .footer-icons {
+      display: flex;
+      justify-content: center;            
+      margin: 0 4.5rem 3.1rem 4.5rem;      
+      
+      i {
+        padding-right: 3.8rem;
+        &:last-child {
+          padding-right: 0;
+        }
+      }
+    }
+  }
   }
 }
