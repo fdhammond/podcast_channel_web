@@ -638,8 +638,7 @@ footer {
 
       .topics-icons {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        flex-direction: column;        
         align-content: center;
         gap: 0;
         align-items: center;
@@ -670,6 +669,7 @@ footer {
         height: 34.1rem;
         background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
         clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0% 100%);
+        
         .news-title {
           margin-bottom: 3.6rem;
           h2 {

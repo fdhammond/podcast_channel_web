@@ -642,9 +642,6 @@ footer .footer .footer-icons i a:last-child {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     -ms-flex-line-pack: center;
         align-content: center;
     gap: 0;
