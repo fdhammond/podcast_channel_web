@@ -113,7 +113,7 @@ $main-color-deg: radial-gradient(circle, rgba(0,0,254,1) 0%, rgba(0,240,184,1) 1
 
 @media (max-width: 952px) {
 
-    nav {
+    nav {    
       label {
         &.logo {
           img {
@@ -137,7 +137,7 @@ $main-color-deg: radial-gradient(circle, rgba(0,0,254,1) 0%, rgba(0,240,184,1) 1
 }
 
 @media (max-width: 950px) {
-  nav {
+  nav { 
     .checkbtn {
       display: block;
     }
@@ -273,7 +273,7 @@ main {
   }
   .episodes-spotify {
     display: grid;
-    grid-template-columns: repeat( auto-fit, minmax(58.4rem, 1fr) );
+    grid-template-columns: repeat( auto-fit, minmax(50rem, 1fr) );
     gap: 7.2rem;
     margin: 0 10rem 0 10rem;
   }
@@ -352,20 +352,18 @@ main {
     }
     .topics-icons {
       margin: 5.6rem 20rem;      
-      display: grid;    
-      grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
-      gap: 7.2rem;     
-      justify-content: center;
-      align-content: center;
+      display: flex;       
+      justify-content: space-around;           
+            
       .icons {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
+        flex-direction: column;        
         align-items: center;
-        margin: auto;
-        
+        align-self: center;       
+           
+       
         h3 {
+          width: 22rem;
           margin-top: 2.9rem;
           font-family: $main-mono-sans;
           font-weight: 60rem;
@@ -465,15 +463,22 @@ footer {
     margin-right: 10rem;
 
     i {
-      padding-right: 3.6rem;
       font-size: 1.8rem;
-      color: var(--main-color-black);
+      color: $main-color-black;
+      padding-right: 3.6rem;
       letter-spacing: 0;
       line-height: 28px;
 
-      &:last-child {
-        padding-right: 0;
-       }
+      &:hover {
+        color: $main-color-green
+      }
+      a {                
+        color: var(--main-color-black);        
+        &:last-child {
+          padding-right: 0;
+         }
+      }      
+      
       }
     }
   }
@@ -486,7 +491,7 @@ footer {
 @media (max-width: 550px) {
  
   .main-text {
-    margin: 0 1.6rem 0 1.6rem;
+    margin: 8rem 1.6rem 0 1.6rem;
      
   .title {
     display: flex;
@@ -550,7 +555,7 @@ footer {
       .background-clip {
         margin-top: -12rem;
         height: 125rem;
-        clip-path: polygon(0 2%, 100% 0%, 100% 95%, 0% 100%);
+        clip-path: polygon(0 8%, 100% 5%, 100% 95%, 0% 100%);
       }
 
       .episodes-spotify {
@@ -619,7 +624,7 @@ footer {
 
     /* Topics */
     .topics {
-
+      margin-bottom: 4.2rem;
       .topics-title {
         h2 {
           margin: 4.8rem 1.6rem 2.4rem 1.6rem;
@@ -643,15 +648,7 @@ footer {
         img {
           margin-top: 6.5rem;
         }
-
-        #first-icon {
-          margin-top: -1.1rem;
-        }
-
-        #second-icon {
-          gap: -10rem;
-          margin-top: -1.6rem;
-        }
+       
 
         h3 {
           font-family: $main-mono-sans;
@@ -713,7 +710,7 @@ footer {
       }
     .footer-icons {
       display: flex;
-      justify-content: center;            
+      justify-content: space-around;            
       margin: 0 4.5rem 3.1rem 4.5rem;      
       
       i {
