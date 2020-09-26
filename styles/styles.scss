@@ -111,33 +111,17 @@ $main-color-deg: radial-gradient(circle, rgba(0,0,254,1) 0%, rgba(0,240,184,1) 1
     }
   }
 
-@media (max-width: 952px) {
 
-    nav {    
-      label {
-        &.logo {
-          img {
-          margin-left: 1.6rem;
-          }
-        }
-      }
-
-      ul {
-        
-        li {
-          a {
-            color: $main-color-white;
-            font-size: 1.6rem;
-            letter-spacing: 0;
-            line-height: 1.6rem;
-          }
-        }
-      }
-    }
-}
 
 @media (max-width: 950px) {
   nav { 
+    label {
+      &.logo {
+        img {
+        margin-left: 1.6rem;
+        }
+      }
+    }
     .checkbtn {
       display: block;
     }
@@ -154,7 +138,13 @@ $main-color-deg: radial-gradient(circle, rgba(0,0,254,1) 0%, rgba(0,240,184,1) 1
       li{
       display: block; 
       margin: 2.4rem 0 0 1.6rem;
+      a {
+        color: $main-color-white;
+        font-size: 1.6rem;
+        letter-spacing: 0;
+        line-height: 1.6rem;
       }
+    }
     }
   }
   

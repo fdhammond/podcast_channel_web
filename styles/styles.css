@@ -71,19 +71,10 @@ nav #check {
   display: none;
 }
 
-@media (max-width: 952px) {
+@media (max-width: 950px) {
   nav label.logo img {
     margin-left: 1.6rem;
   }
-  nav ul li a {
-    color: #fff;
-    font-size: 1.6rem;
-    letter-spacing: 0;
-    line-height: 1.6rem;
-  }
-}
-
-@media (max-width: 950px) {
   nav .checkbtn {
     display: block;
   }
@@ -101,6 +92,12 @@ nav #check {
   nav ul li {
     display: block;
     margin: 2.4rem 0 0 1.6rem;
+  }
+  nav ul li a {
+    color: #fff;
+    font-size: 1.6rem;
+    letter-spacing: 0;
+    line-height: 1.6rem;
   }
   #check:checked ~ ul {
     top: 0;
