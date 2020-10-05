@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="assets/logo.svg">
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
     <title>Podcast Channel</title>
 </head>
 
@@ -22,17 +21,17 @@
                     <i class="fas fa-bars"></i>
                 </label>
                 <label class="logo">
-                    <a href="#"><img src="assets/logo.svg" alt="logo" onmouseover="moveElementTitle(this)"></a>
+                    <a href="#"><img src="assets/logo.svg" alt="logo"></a>
                 </label>
                 <ul>
-                    <li onmouseover="moveElementTitle(this)" onmouseclick="moveElementOut(this)"><a
-                            href="#episodes">EPISODIOS</a></li>
-                    <li onmouseover="moveElementTitle(this)"><a href="#about">NOSOTROS</a></li>
-                    <li onmouseover="moveElementTitle(this)"><a href="#interviews">ENTREVISTAS</a></li>
-                    <li onmouseover="moveElementTitle(this)"><a href="#topics">TÓPICOS</a></li>
+                    <li><a href="#episodes">EPISODIOS</a></li>
+                    <li><a href="#about">NOSOTROS</a></li>
+                    <li><a href="#interviews">ENTREVISTAS</a></li>
+                    <li><a href="#topics">TÓPICOS</a></li>
                 </ul>
             </nav>
         </div>
+
         <div class="main-text">
             <div class="title">
                 <h1 class="title-desktop">Hello <span id="world">world</span> pale blue dot<span id="dot">.</span></h1>
@@ -155,18 +154,6 @@
         </div>
     </footer>
 
-
-    <script>
-        function moveElementTitle(elem) {
-            elem.classList.add('animate__animated');
-            elem.classList.add('animate__heartBeat');
-        }
-
-        function moveElementOut(elem) {
-            elem.classList.add('animate__animated');
-            elem.classList.add('animate__bounceOutUp');
-        }
-    </script>
 </body>
 
 </html>
