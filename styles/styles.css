@@ -345,7 +345,6 @@ main .topics .topics-icons .icons {
 
 main .topics .topics-icons .icons h3 {
   width: 22rem;
-  margin-top: 2.9rem;
   font-family: "IBM Plex Sans";
   font-weight: 60rem;
   font-size: 2.4rem;
@@ -660,7 +659,7 @@ footer .footer .footer-icons i a:last-child {
     margin: 0;
     font-family: "IBM Plex Sans";
     font-size: 2.4rem;
-    font-weight: 600;
+    font-weight: 60rem;
     color: #060A24;
     letter-spacing: 0;
     text-align: center;
