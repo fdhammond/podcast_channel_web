@@ -504,7 +504,7 @@ footer .footer .footer-icons i a:last-child {
     font-size: 3.6rem;
   }
   .main-text .paragraph {
-    width: 90%;
+    width: 100%;
     margin-top: 1.6rem;
   }
   .main-text .paragraph p {
@@ -533,8 +533,8 @@ footer .footer .footer-icons i a:last-child {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin: 3.6rem 1.6rem 0 -1.6rem;
-    width: 90%;
+    margin-top: 3.6rem;
+    width: 100%;
     height: 4.8rem;
   }
   main {
@@ -558,8 +558,8 @@ footer .footer .footer-icons i a:last-child {
   main .episodes .background-clip {
     margin-top: -12rem;
     height: 125rem;
-    -webkit-clip-path: polygon(0 8%, 100% 5%, 100% 95%, 0% 100%);
-            clip-path: polygon(0 8%, 100% 5%, 100% 95%, 0% 100%);
+    -webkit-clip-path: polygon(0 6%, 100% 4%, 100% 95%, 0% 100%);
+            clip-path: polygon(0 6%, 100% 4%, 100% 95%, 0% 100%);
   }
   main .episodes .episodes-spotify {
     margin: 0 1.1rem 1.1rem 1.1rem;
@@ -645,12 +645,19 @@ footer .footer .footer-icons i a:last-child {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin: 0;
+    margin: 2.4rem 0 0 0;
   }
-  main .topics .topics-icons img {
-    margin-top: 6.5rem;
+  main .topics .topics-icons .icons {
+    margin-top: 4.9rem;
+  }
+  main .topics .topics-icons .icons:nth-child(1) {
+    margin-top: 0;
+  }
+  main .topics .topics-icons .icons img {
+    padding: 1.3rem 0;
   }
   main .topics .topics-icons h3 {
+    margin: 0;
     font-family: "IBM Plex Sans";
     font-size: 2.4rem;
     font-weight: 600;
@@ -658,7 +665,6 @@ footer .footer .footer-icons i a:last-child {
     letter-spacing: 0;
     text-align: center;
     width: 28.8rem;
-    height: 6.4rem;
   }
   main .news .news-background {
     height: 34.1rem;
@@ -722,6 +728,15 @@ footer .footer .footer-icons i a:last-child {
     padding-right: 3.8rem;
   }
   footer .footer .footer-icons i:last-child {
+    padding-right: 0;
+  }
+  footer .footer .footer-icons i:hover {
+    color: #00F3BB;
+  }
+  footer .footer .footer-icons i a {
+    color: var(--main-color-black);
+  }
+  footer .footer .footer-icons i a:last-child {
     padding-right: 0;
   }
 }
