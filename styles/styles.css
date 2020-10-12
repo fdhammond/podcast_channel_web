@@ -48,7 +48,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  font-weight: 50rem;
+  font-weight: 500;
   font-size: 1.6rem;
   color: #00F3BB;
   letter-spacing: 0;
@@ -165,7 +165,7 @@ nav #check {
   margin-top: 5.6rem;
 }
 
-.main-text .button-title button {
+.main-text .button-title a {
   display: inline-block;
   background-color: #00F3BB;
   font-family: "IBM Plex Mono";
@@ -177,17 +177,15 @@ nav #check {
   color: #060A24;
   width: 22.6rem;
   height: 5.6rem;
-}
-
-.main-text .button-title button:hover {
-  background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
-  color: #fff;
-}
-
-.main-text .button-title button a {
-  display: inline-block;
-  width: 22.6rem;
-  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-family: "IBM Plex Mono";
   font-size: 1.8rem;
   color: #060A24;
@@ -195,6 +193,11 @@ nav #check {
   text-align: center;
   line-height: 2.4rem;
   text-decoration: none;
+}
+
+.main-text .button-title a:hover {
+  background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+  color: #fff;
 }
 
 main {
@@ -234,6 +237,13 @@ main .episodes .episodes-spotify {
       grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
   gap: 7.2rem;
   margin: 0 10rem 0 10rem;
+}
+
+main .episodes .episodes-spotify iframe {
+  width: 100%;
+  height: 232px;
+  border: 0px;
+  background-color: transparent;
 }
 
 main .about {
@@ -346,7 +356,7 @@ main .topics .topics-icons .icons {
 main .topics .topics-icons .icons h3 {
   width: 22rem;
   font-family: "IBM Plex Sans";
-  font-weight: 60rem;
+  font-weight: 600;
   font-size: 2.4rem;
   color: #060A24;
   letter-spacing: 0;
@@ -399,7 +409,7 @@ main .news .news-background .button-news {
       align-content: center;
 }
 
-main .news .news-background .button-news button {
+main .news .news-background .button-news a {
   display: inline-block;
   background-color: #00F3BB;
   font-family: "IBM Plex Mono";
@@ -411,15 +421,15 @@ main .news .news-background .button-news button {
   color: #060A24;
   width: 34.5rem;
   height: 5.6rem;
-}
-
-main .news .news-background .button-news button:hover {
-  background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
-  color: #fff;
-}
-
-main .news .news-background .button-news button a {
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-family: "IBM Plex Mono";
   font-size: 1.8rem;
   color: #060A24;
@@ -427,6 +437,11 @@ main .news .news-background .button-news button a {
   text-align: center;
   line-height: 2.4rem;
   text-decoration: none;
+}
+
+main .news .news-background .button-news a:hover {
+  background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+  color: #fff;
 }
 
 /* Footer */
@@ -528,7 +543,7 @@ footer .footer .footer-icons i a:last-child {
             justify-content: center;
     margin: 0;
   }
-  .main-text .button-title button {
+  .main-text .button-title a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -659,7 +674,7 @@ footer .footer .footer-icons i a:last-child {
     margin: 0;
     font-family: "IBM Plex Sans";
     font-size: 2.4rem;
-    font-weight: 60rem;
+    font-weight: 600;
     color: #060A24;
     letter-spacing: 0;
     text-align: center;
@@ -686,7 +701,7 @@ footer .footer .footer-icons i a:last-child {
   main .news .news-background .button-news {
     margin-top: 22.2rem;
   }
-  main .news .news-background .button-news button {
+  main .news .news-background .button-news a {
     width: 100%;
     height: 4.8rem;
     margin: 0 1.6rem;
