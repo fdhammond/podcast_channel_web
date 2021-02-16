@@ -11,4 +11,4 @@ Work Nº 1 - Fullstack Dev. - Instituto Acamica - 2020. :collision:
 :bulb: HTML 
 :bulb: CSS 
 :bulb: SASS 
-:rocket: Vercel App for HOST
+:rocket: Vercel App for HOST 
